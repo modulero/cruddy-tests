@@ -10,7 +10,7 @@ This package provides an easy way to create CRUD-based feature tests.
 You can install this package via composer using:
 
 ```bash
-composer require modulero/cruddy-tests
+composer require --dev modulero/cruddy-tests
 ```
 
 The package will automatically register itself.
