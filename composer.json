@@ -1,0 +1,44 @@
+{
+    "name": "modulero/cruddy-tests",
+    "description": "Cruddy Tests for Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Richard Hansma",
+            "email": "richard@modulero.nl"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/console": "5.6.*|5.7.*|5.8.*",
+        "illuminate/support": "5.6.*|5.7.*|5.8.*",
+        "symfony/console": "4.2.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Modulero\\CruddyTests\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modulero\\CruddyTests\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modulero\\CruddyTests\\CruddyTestsServiceProvider"
+            ]
+        }
+    }
+}
