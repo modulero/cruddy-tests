@@ -23,7 +23,7 @@ class CruddyTestsCommand extends GeneratorCommand
     protected $description = 'Create a new batch of cruddy tests';
 
     /**
-     * The current resource ability
+     * The current resource ability.
      *
      * @var string
      */
