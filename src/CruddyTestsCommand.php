@@ -135,7 +135,7 @@ class CruddyTestsCommand extends GeneratorCommand
      */
     protected function only()
     {
-        return array_filter(explode(',', $this->option('only')));
+        return array_filter(explode(',', lcfirst($this->option('only'))));
     }
 
     /**
@@ -145,7 +145,7 @@ class CruddyTestsCommand extends GeneratorCommand
      */
     protected function except()
     {
-        return array_filter(explode(',', $this->option('except')));
+        return array_filter(explode(',', lcfirst($this->option('except'))));
     }
 
     /**
